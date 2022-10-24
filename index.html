@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Les om forskjellige turer!</title>
+        <meta charset="UTF-8">
+        <style>
+            .nyheter{
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                max-width: 80rem;
+                grid-auto-rows: minmax(12rem,auto);
+                gap: 1rem;
+            }
+            .nyheter a{
+                background-color: #eee;
+                display: flex;
+                align-items: flex-end;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+                position: relative;
+                font-family: sans-serif;
+            }
+        
+            .nyheter h1{
+                position: absolute;
+                margin: 0;
+                color: white;
+                background-color: rgba(128, 128, 128, 0.528);
+            }
+        
+            .nyheter img{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            main{
+                background-color: grey;
+                min-height: 100%;
+                min-width: 1024px;
+
+                width: 100%;
+                height: auto;
+            }
+            h1{
+                color: white;
+            }
+            .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height:0;
+            transition: .5s ease;
+            }
+
+            .container:hover .overlay {
+            bottom: 0;
+            height: 100%;
+            }
+            .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+            .container {
+            position: relative;
+            }
+            #skrift{
+                font-size: 2rem;
+                background-color: blanchedalmond;
+            }
+            #skrift1{
+                font-size: 1rem;
+            }
+
+            .tre-kolonner {grid-column: span 6;}
+        </style>
+    </head>
+
+
+    <body>
+        <main>
+        <h1>Vindunderturer</h1>
+        <section class="nyheter">
+            <a href="fl1.html" class="tre-kolonner"> <img src="friluftsliv_1.jpg">
+                <h1 id="skrift1">Ta deg en tur opptil fjellene. Bedre blir det ikke!</h1></a>
+
+            <a href="fl2.html" class="tre-kolonner"><img src="friluftsliv_2.jpg"> 
+                <h1 id="skrift1">Fersk opplevlese slår aldri feil!</h1></a>
+                
+                
+
+            <a href="fl3.html" class="tre-kolonner"><img src="friluftsliv_3.jpg">
+                <h1 id="skrift1">Fossen er nydeligere enn det du tror!</h1></a>
+ 
+
+            <a href="fl4.html" class="tre-kolonner"><img src="friluftsliv_4.jpg">
+                <h1 id="skrift1">Nordlyset er noe du ikke kan gå glipp av.</h1></a>
+
+
+            <a href="fl5.html" class="tre-kolonner"><img src="friluftsliv_5.jpg">
+                <h1 id="skrift1">Dra ut på tur, det slår aldri feil!</h1></a>
+
+
+            <a href="fl6.html" class="tre-kolonner"><img src="friluftsliv_6.jpg">
+                <h1 id="skrift1">Snø og fjell, hva er bedre enn det!</h1></a>
+
+
+            <a href="fl7.html" class="tre-kolonner"><img src="friluftsliv_7.jpg">
+                <h1 id="skrift1">Ut på tur aldri sur!</h1></a>
+
+
+            <a href="fl8.html" class="tre-kolonner"><img src="friluftsliv_8.jpg">
+                <h1 id="skrift1">Kom deg i form!</h1></a>
+
+        </section>
+    </body>
+    </main>
+</html>
